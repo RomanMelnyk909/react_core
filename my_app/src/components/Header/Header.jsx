@@ -1,13 +1,19 @@
+import NavigationItem from'../NavigationItem'
 import './header.css';
-import NavigationItem from "../navigationItem/NavigationItem";
+
 
 const Header = () => {
    return (
+      <header>
       <div className='header'>
-         <NavigationItem text='1fff' isUppercasetext={true} />
-         <NavigationItem text='2fff' isUppercasetext={false} />
-         <NavigationItem text='3fff' isUppercasetext={true} />
-      </div>);
+         <NavigationItem text='main' isUppercasetext={true} />
+         <NavigationItem text='navigation' isUppercasetext={true} />
+         <NavigationItem text='menu' isUppercasetext={true} />
+         <NavigationItem text='etc' isUppercasetext={true} />
+      </div>
+      <NavigationItem text='header' isUppercasetext={false} />
+      </header>);
+
 }
 
 export default Header
