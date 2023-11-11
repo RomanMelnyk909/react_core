@@ -27,7 +27,6 @@ const Header = () => {
    ];
 
   
-
    return (
       <header>
       <div className='header'>
@@ -35,6 +34,7 @@ const Header = () => {
             navElements.map((element) => {
             return (
                <NavigationItem
+                  key={element.text}
                   text={element.text}
                   isUppercasetext={element.isUppercasetext}
                   description={element.description} />
